@@ -1,0 +1,587 @@
+    [
+  {
+    "id": "card-01",
+    "phase": 1,
+    "title": "Reformas de Clístenes (Democracia Ateniense)",
+    "year": 508,
+    "description": "Reformas políticas que reorganizaram a participação dos cidadãos de Atenas e ampliaram as bases da democracia ateniense.",
+    "detailedFeedback": "As reformas de Clístenes reorganizaram a participação política ateniense e ajudaram a consolidar a democracia. Elas antecedem as Guerras Médicas, que ocorreram quando as cidades gregas passaram a enfrentar as ameaças do Império Persa.",
+    "image": "/images/card-01.jpg"
+  },
+  {
+    "id": "card-02",
+    "phase": 1,
+    "title": "Guerras Médicas e do Peloponeso",
+    "year": 499,
+    "description": "Conjunto de conflitos que envolveu as cidades gregas contra o Império Persa e, posteriormente, a disputa pelo poder entre Atenas e Esparta.",
+    "detailedFeedback": "As Guerras Médicas ocorreram antes da Guerra do Peloponeso e fortaleceram Atenas. A rivalidade entre Atenas e Esparta depois levou ao conflito do Peloponeso, enfraquecendo as cidades gregas e alterando o equilíbrio político da região.",
+    "image": "/images/card-02.jpg"
+  },
+  {
+    "id": "card-03",
+    "phase": 1,
+    "title": "Lei das Doze Tábuas na República Romana",
+    "year": 451,
+    "description": "Primeiro conjunto escrito de leis romanas, criado no contexto das disputas entre patrícios e plebeus por maior igualdade jurídica.",
+    "detailedFeedback": "A Lei das Doze Tábuas tornou públicas normas que antes eram controladas principalmente pelos grupos dominantes. Ela pertence ao período inicial da República Romana e antecede a grande expansão territorial que aumentaria as tensões sociais e políticas em Roma.",
+    "image": "/images/card-03.jpg"
+  },
+  {
+    "id": "card-04",
+    "phase": 1,
+    "title": "Expansão Territorial Romana e Crise da República",
+    "year": 264,
+    "description": "Expansão de Roma pelo Mediterrâneo acompanhada por transformações econômicas, sociais e políticas que contribuíram para a crise da República.",
+    "detailedFeedback": "A expansão territorial trouxe riquezas, escravizados e novas terras para Roma, mas também aprofundou desigualdades e disputas pelo poder. Essas tensões contribuíram para a crise republicana e para a ascensão de lideranças militares.",
+    "image": "/images/card-04.jpg"
+  },
+  {
+    "id": "card-05",
+    "phase": 1,
+    "title": "Pax Romana e a Política do Pão e Circo",
+    "year": 27,
+    "description": "Período de relativa estabilidade do Império Romano associado à consolidação do poder imperial e a políticas de distribuição de alimentos e entretenimento.",
+    "detailedFeedback": "A Pax Romana ocorreu depois da crise da República e da formação do Império. A estabilidade, as obras públicas e políticas de abastecimento e entretenimento ajudaram a sustentar a ordem imperial, embora não tenham eliminado conflitos e desigualdades.",
+    "image": "/images/card-05.jpg"
+  },
+  {
+    "id": "card-06",
+    "phase": 1,
+    "title": "Édito de Milão e a Cristianização de Roma",
+    "year": 313,
+    "description": "Medida de Constantino e Licínio que garantiu tolerância ao cristianismo, seguida pela crescente aproximação entre a religião cristã e o Estado romano.",
+    "detailedFeedback": "O Édito de Milão ocorreu durante o Império Romano e marcou uma mudança importante na relação entre Estado e cristianismo. A transformação foi gradual: a tolerância religiosa precedeu a posterior adoção do cristianismo como religião favorecida pelo poder imperial.",
+    "image": "/images/card-06.jpg"
+  },
+  {
+    "id": "card-07",
+    "phase": 1,
+    "title": "Invasões Bárbaras e Queda de Roma",
+    "year": 476,
+    "description": "Processo de fragmentação política do Império Romano do Ocidente associado a migrações, conflitos internos e deposição do último imperador romano do Ocidente.",
+    "detailedFeedback": "A queda do Império Romano do Ocidente foi resultado de um processo longo, e não de um único acontecimento. A fragmentação política favoreceu a formação de novos reinos na Europa Ocidental e contribuiu para as transformações que caracterizaram a sociedade medieval.",
+    "image": "/images/card-07.jpg"
+  },
+  {
+    "id": "card-08",
+    "phase": 1,
+    "title": "Código de Hamurabi na Mesopotâmia",
+    "year": -1754,
+    "description": "Conjunto de leis associado ao rei Hamurabi da Babilônia, importante registro das normas jurídicas e da organização social da Mesopotâmia.",
+    "detailedFeedback": "O Código de Hamurabi é muito anterior à formação das sociedades grega e romana. Sua importância está no registro de normas jurídicas da antiga Babilônia, permitindo observar uma sociedade hierarquizada e com diferentes tratamentos conforme a posição social.",
+    "image": "/images/card-08.jpg"
+  },
+  {
+    "id": "card-09",
+    "phase": 1,
+    "title": "Centralização Monárquica no Egito Antigo",
+    "year": -3100,
+    "description": "Processo de unificação do Alto e do Baixo Egito e formação de uma monarquia centralizada sob a autoridade do faraó.",
+    "detailedFeedback": "A centralização política egípcia ocorreu milhares de anos antes das sociedades clássicas greco-romanas. A unificação favoreceu a formação de um Estado centralizado, com administração, religião e autoridade política fortemente associadas à figura do faraó.",
+    "image": "/images/card-09.jpg"
+  },
+  {
+    "id": "card-10",
+    "phase": 1,
+    "title": "Apogeu da Civilização Maia e Asteca",
+    "year": 1200,
+    "description": "Períodos de grande desenvolvimento de sociedades mesoamericanas, com avanços políticos, econômicos, culturais e urbanos em diferentes momentos históricos.",
+    "detailedFeedback": "Maias e astecas não atingiram seu auge exatamente no mesmo período. Os principais momentos de desenvolvimento dessas sociedades ocorreram em épocas distintas, mas ambas demonstram a diversidade e a complexidade das civilizações americanas antes da conquista europeia.",
+    "image": "/images/card-10.jpg"
+  },
+  {
+    "id": "card-11",
+    "phase": 1,
+    "title": "Expansão do Império Inca e a Mita",
+    "year": 1438,
+    "description": "Expansão do Estado inca pelos Andes e organização de formas de trabalho obrigatório, entre elas a mita, utilizada para obras e atividades do Estado.",
+    "detailedFeedback": "A expansão inca ocorreu pouco antes da conquista espanhola. A mita fazia parte da organização do trabalho no mundo andino e não deve ser confundida com a escravidão colonial posteriormente imposta pelos europeus.",
+    "image": "/images/card-11.jpg"
+  },
+  {
+    "id": "card-12",
+    "phase": 1,
+    "title": "Tratado de Verdun e o Império Carolíngio",
+    "year": 843,
+    "description": "Tratado que dividiu o Império Carolíngio entre os herdeiros de Luís, o Piedoso, aprofundando sua fragmentação política.",
+    "detailedFeedback": "O Tratado de Verdun ajuda a entender a fragmentação do Império Carolíngio. Essa divisão ocorreu em um contexto de disputas sucessórias e contribuiu para a formação de diferentes centros de poder na Europa Ocidental medieval.",
+    "image": "/images/card-12.jpg"
+  },
+  {
+    "id": "card-13",
+    "phase": 1,
+    "title": "Consolidação do Sistema de Suserania e Vassalagem",
+    "year": 900,
+    "description": "Desenvolvimento de relações políticas e militares entre senhores e dependentes na Europa medieval, associadas à descentralização do poder.",
+    "detailedFeedback": "As relações de suserania e vassalagem se desenvolveram em um cenário de fragmentação política medieval. Elas ajudavam a organizar alianças, obrigações militares e concessões de terras, mas não constituíam sozinhas toda a estrutura do feudalismo.",
+    "image": "/images/card-13.jpg"
+  },
+  {
+    "id": "card-14",
+    "phase": 1,
+    "title": "Hégira e a Expansão Islâmica",
+    "year": 622,
+    "description": "Migração de Muhammad de Meca para Medina em 622, marco inicial do calendário islâmico e ponto de partida para a expansão da comunidade muçulmana.",
+    "detailedFeedback": "A Hégira marcou uma transformação política e religiosa na comunidade de Muhammad. A partir de Medina, o islamismo se expandiu por diferentes regiões, formando sociedades e redes comerciais que influenciaram profundamente o mundo medieval.",
+    "image": "/images/card-14.jpg"
+  },
+  {
+    "id": "card-15",
+    "phase": 1,
+    "title": "Cisma do Oriente",
+    "year": 1054,
+    "description": "Ruptura entre as Igrejas de Roma e Constantinopla que consolidou a separação entre o cristianismo católico romano e o cristianismo ortodoxo.",
+    "detailedFeedback": "O Cisma do Oriente aprofundou diferenças políticas, culturais, litúrgicas e religiosas existentes entre Roma e Constantinopla. Ele ajuda a explicar a formação de tradições cristãs distintas na Europa Ocidental e no mundo bizantino.",
+    "image": "/images/card-15.jpg"
+  },
+  {
+    "id": "card-16",
+    "phase": 1,
+    "title": "Movimento das Cruzadas",
+    "year": 1096,
+    "description": "Expedições militares promovidas por poderes cristãos europeus a partir do final do século XI, principalmente em direção ao Mediterrâneo Oriental.",
+    "detailedFeedback": "As Cruzadas estiveram relacionadas a interesses religiosos, políticos e econômicos. Além dos conflitos no Oriente, elas ampliaram contatos entre diferentes regiões e contribuíram para mudanças nas relações comerciais e políticas da Europa medieval.",
+    "image": "/images/card-16.jpg"
+  },
+  {
+    "id": "card-17",
+    "phase": 1,
+    "title": "Renascimento Comercial e Urbano",
+    "year": 1100,
+    "description": "Processo de crescimento das atividades comerciais, das cidades e das trocas que transformou a economia e a sociedade europeias durante a Baixa Idade Média.",
+    "detailedFeedback": "O crescimento comercial e urbano foi favorecido pela expansão das rotas de troca e pelo aumento da produção. A revitalização das cidades criou novas oportunidades para comerciantes e artesãos e ajudou a transformar a sociedade feudal.",
+    "image": "/images/card-17.jpg"
+  },
+  {
+    "id": "card-18",
+    "phase": 1,
+    "title": "Fundação das Primeiras Universidades Europeias",
+    "year": 1088,
+    "description": "Formação de instituições de ensino superior na Europa medieval, ligadas ao crescimento urbano e à organização do conhecimento.",
+    "detailedFeedback": "As primeiras universidades surgiram no contexto de crescimento urbano e intelectual da Europa medieval. Elas se relacionaram ao desenvolvimento do comércio, das cidades e de novas formas de produção e circulação do conhecimento.",
+    "image": "/images/card-18.jpg"
+  },
+  {
+    "id": "card-19",
+    "phase": 1,
+    "title": "Assinatura da Magna Carta na Inglaterra",
+    "year": 1215,
+    "description": "Documento imposto ao rei João que estabeleceu limites ao poder monárquico e reconheceu direitos de determinados grupos da sociedade inglesa.",
+    "detailedFeedback": "A Magna Carta não criou uma democracia moderna, mas representou uma limitação importante ao poder do rei. Ela surgiu de conflitos entre a monarquia e setores da nobreza e posteriormente ganhou importância na história do constitucionalismo.",
+    "image": "/images/card-19.jpg"
+  },
+  {
+    "id": "card-20",
+    "phase": 1,
+    "title": "A Peste Negra",
+    "year": 1347,
+    "description": "Grande epidemia de peste que atingiu a Europa no século XIV e provocou enorme mortalidade, afetando profundamente a economia e a sociedade.",
+    "detailedFeedback": "A Peste Negra atingiu uma Europa já marcada pelo crescimento urbano e comercial. A enorme mortalidade reduziu a disponibilidade de trabalhadores e provocou mudanças econômicas e sociais que contribuíram para a transformação das estruturas medievais.",
+    "image": "/images/card-20.jpg"
+  },
+  {
+    "id": "card-21",
+    "phase": 1,
+    "title": "Guerra dos Cem Anos",
+    "year": 1337,
+    "description": "Longa série de conflitos entre Inglaterra e França, marcada por disputas dinásticas e territoriais, encerrada em 1453.",
+    "detailedFeedback": "A Guerra dos Cem Anos ocorreu paralelamente à crise do século XIV e à Peste Negra. Seu encerramento em 1453 coincide com transformações importantes na Europa e com o período tradicionalmente utilizado como marco de passagem para a Modernidade.",
+    "image": "/images/card-21.jpg"
+  },
+  {
+    "id": "card-22",
+    "phase": 2,
+    "title": "Tomada de Constantinopla pelos Otomanos",
+    "year": 1453,
+    "description": "Conquista de Constantinopla pelo Império Otomano, encerrando o Império Bizantino e alterando as relações políticas e comerciais entre Europa e Oriente.",
+    "detailedFeedback": "A tomada de Constantinopla em 1453 é tradicionalmente usada como um dos marcos da passagem da Idade Média para a Modernidade. A expansão otomana também estimulou a busca europeia por novas rotas comerciais, embora esse processo tenha múltiplas causas.",
+    "image": "/images/card-22.jpg"
+  },
+  {
+    "id": "card-23",
+    "phase": 2,
+    "title": "Publicação das 95 Teses de Martinho Lutero (Reforma Protestante)",
+    "year": 1517,
+    "description": "Documento associado a Martinho Lutero que criticou práticas da Igreja Católica e contribuiu para o início da Reforma Protestante.",
+    "detailedFeedback": "As críticas de Lutero ocorreram em um contexto de questionamentos religiosos e transformações políticas e culturais. A Reforma rompeu a unidade religiosa da Europa Ocidental e provocou conflitos e mudanças na relação entre Igreja e Estado.",
+    "image": "/images/card-23.jpg"
+  },
+  {
+    "id": "card-24",
+    "phase": 2,
+    "title": "Concílio de Trento e a Contrarreforma",
+    "year": 1545,
+    "description": "Concílio da Igreja Católica que reafirmou doutrinas, promoveu reformas internas e respondeu aos desafios provocados pela Reforma Protestante.",
+    "detailedFeedback": "O Concílio de Trento foi uma resposta institucional da Igreja Católica à Reforma Protestante. Enquanto os reformadores questionavam práticas e doutrinas católicas, a Igreja reafirmou seus princípios e promoveu medidas de reorganização interna.",
+    "image": "/images/card-24.jpg"
+  },
+  {
+    "id": "card-25",
+    "phase": 2,
+    "title": "Revolução Científica (O Heliocentrismo)",
+    "year": 1543,
+    "description": "Transformação das formas de produzir conhecimento científico, marcada por novas observações, métodos e modelos sobre a natureza e o universo.",
+    "detailedFeedback": "O heliocentrismo de Copérnico foi parte de um processo científico mais amplo. A Revolução Científica questionou explicações tradicionais e contribuiu para novas formas de observar, experimentar e explicar a natureza.",
+    "image": "/images/card-25.jpg"
+  },
+  {
+    "id": "card-26",
+    "phase": 2,
+    "title": "Publicação de \"O Leviatã\" de Thomas Hobbes",
+    "year": 1651,
+    "description": "Obra política de Thomas Hobbes que discutiu a origem e a autoridade do Estado e defendeu a necessidade de um poder soberano para conter conflitos.",
+    "detailedFeedback": "O Leviatã foi publicado em meio às disputas políticas e religiosas da Inglaterra do século XVII. Hobbes procurou explicar a necessidade de uma autoridade política forte como forma de evitar a desordem e a guerra civil.",
+    "image": "/images/card-26.jpg"
+  },
+  {
+    "id": "card-27",
+    "phase": 2,
+    "title": "Revolução Gloriosa na Inglaterra",
+    "year": 1688,
+    "description": "Processo político que depôs Jaime II e consolidou uma monarquia limitada, fortalecendo o Parlamento inglês.",
+    "detailedFeedback": "A Revolução Gloriosa reforçou a limitação do poder monárquico e a importância do Parlamento. Esse processo ajudou a formar um modelo político que posteriormente influenciou debates sobre direitos e governo constitucional.",
+    "image": "/images/card-27.jpg"
+  },
+  {
+    "id": "card-28",
+    "phase": 2,
+    "title": "Chegada de Colombo à América e Tratado de Tordesilhas",
+    "year": 1492,
+    "description": "Viagem de Cristóvão Colombo que estabeleceu contato permanente entre Europa e América e, posteriormente, negociação entre Portugal e Espanha sobre áreas de expansão ultramarina.",
+    "detailedFeedback": "A chegada de Colombo abriu uma nova etapa da expansão marítima europeia. O Tratado de Tordesilhas, assinado em 1494, procurou dividir áreas de exploração entre Portugal e Espanha e está diretamente ligado a esse processo.",
+    "image": "/images/card-28.jpg"
+  },
+  {
+    "id": "card-29",
+    "phase": 2,
+    "title": "Conquista de Tenochtitlán por Hernán Cortés",
+    "year": 1521,
+    "description": "Conquista da capital do Império Asteca pelas forças de Hernán Cortés e seus aliados indígenas, integrando a região ao domínio espanhol.",
+    "detailedFeedback": "A conquista de Tenochtitlán resultou da combinação de forças espanholas, alianças indígenas, conflitos internos e impactos das doenças. Ela marcou uma etapa decisiva da expansão colonial espanhola na América.",
+    "image": "/images/card-29.jpg"
+  },
+  {
+    "id": "card-30",
+    "phase": 2,
+    "title": "Expedição de Martim Afonso de Sousa e as Capitanias Hereditárias",
+    "year": 1530,
+    "description": "Expedição portuguesa enviada ao Brasil no início da década de 1530, seguida pela implantação das Capitanias Hereditárias em 1534.",
+    "detailedFeedback": "A expedição de Martim Afonso e a criação das Capitanias fizeram parte da tentativa portuguesa de ocupar e administrar efetivamente o território. São processos relacionados, mas ocorreram em momentos diferentes da década de 1530.",
+    "image": "/images/card-30.jpg"
+  },
+  {
+    "id": "card-31",
+    "phase": 2,
+    "title": "Criação do Governo-Geral em Salvador",
+    "year": 1549,
+    "description": "Instituição de uma administração central portuguesa no Brasil para coordenar a colonização, a defesa e a organização das capitanias.",
+    "detailedFeedback": "O Governo-Geral foi criado porque o sistema de capitanias apresentava dificuldades de administração e defesa. A nova estrutura buscou aumentar a coordenação da Coroa sobre a colonização, tendo Salvador como sede.",
+    "image": "/images/card-31.jpg"
+  },
+  {
+    "id": "card-32",
+    "phase": 2,
+    "title": "Fundação do Quilombo dos Palmares",
+    "year": 1600,
+    "description": "Formação e expansão de uma importante comunidade de resistência de pessoas escravizadas e libertas na região da Serra da Barriga, em Alagoas.",
+    "detailedFeedback": "Palmares se desenvolveu no contexto da escravidão colonial e das formas de resistência à exploração. Sua trajetória mostra que a sociedade colonial também foi marcada por conflitos e pela busca de autonomia por parte da população negra.",
+    "image": "/images/card-32.jpg"
+  },
+  {
+    "id": "card-33",
+    "phase": 2,
+    "title": "Invasões Holandesas no Nordeste Açucareiro",
+    "year": 1624,
+    "description": "Conjunto de invasões e ocupações neerlandesas no Nordeste, especialmente em áreas produtoras de açúcar, durante o século XVII.",
+    "detailedFeedback": "As invasões holandesas estiveram ligadas às disputas europeias e ao interesse no lucrativo comércio açucareiro. A ocupação de Pernambuco e o governo de Maurício de Nassau ocorreram dentro desse contexto.",
+    "image": "/images/card-33.jpg"
+  },
+  {
+    "id": "card-34",
+    "phase": 2,
+    "title": "Guerra dos Emboabas e a Febre do Ouro",
+    "year": 1707,
+    "description": "Conflito entre grupos que disputavam o controle das regiões mineradoras, ocorrido no contexto da expansão da mineração de ouro no Brasil colonial.",
+    "detailedFeedback": "A Guerra dos Emboabas foi consequência das disputas pelo acesso às áreas auríferas recém-descobertas. A expansão da mineração também aumentou a ocupação do interior e modificou a economia e a administração colonial.",
+    "image": "/images/card-34.jpg"
+  },
+  {
+    "id": "card-35",
+    "phase": 2,
+    "title": "Revolta de Filipe dos Santos e as Casas de Fundição",
+    "year": 1720,
+    "description": "Revolta ocorrida em Vila Rica contra medidas de controle da mineração, incluindo a instalação das Casas de Fundição.",
+    "detailedFeedback": "As Casas de Fundição buscavam controlar a circulação do ouro e garantir a cobrança de tributos pela Coroa. A Revolta de Filipe dos Santos expressou a resistência de setores locais ao aumento do controle metropolitano.",
+    "image": "/images/card-35.jpg"
+  },
+  {
+    "id": "card-36",
+    "phase": 2,
+    "title": "Tratado de Madrid",
+    "year": 1750,
+    "description": "Acordo entre Portugal e Espanha que redefiniu limites territoriais na América com base, entre outros critérios, na ocupação efetiva dos territórios.",
+    "detailedFeedback": "O Tratado de Madrid procurou substituir a antiga divisão de Tordesilhas por uma definição territorial baseada no princípio do uti possidetis. Ele foi importante para a configuração territorial portuguesa na América.",
+    "image": "/images/card-36.jpg"
+  },
+  {
+    "id": "card-37",
+    "phase": 2,
+    "title": "Conjuração Mineira e Conjuração Baiana",
+    "year": 1789,
+    "description": "Movimentos de contestação à ordem colonial portuguesa, ocorridos em Minas Gerais em 1789 e na Bahia em 1798, com diferenças sociais e políticas importantes.",
+    "detailedFeedback": "A Inconfidência Mineira tinha participação predominante de setores das elites locais, enquanto a Conjuração Baiana contou com participação popular mais ampla e defendeu pautas sociais como a abolição. Apesar das diferenças, ambas questionaram a ordem colonial.",
+    "image": "/images/card-37.jpg"
+  },
+  {
+    "id": "card-38",
+    "phase": 2,
+    "title": "Publicação do \"Espírito das Leis\" de Montesquieu (Iluminismo)",
+    "year": 1748,
+    "description": "Obra de Montesquieu que discutiu diferentes formas de governo e defendeu a separação dos poderes como forma de evitar a concentração da autoridade.",
+    "detailedFeedback": "O pensamento de Montesquieu integra o Iluminismo e ajudou a formular críticas ao absolutismo. A ideia de separação dos poderes posteriormente influenciou projetos constitucionais e movimentos políticos do final do século XVIII.",
+    "image": "/images/card-38.jpg"
+  },
+  {
+    "id": "card-39",
+    "phase": 2,
+    "title": "Declaração de Independência das Treze Colônias (EUA)",
+    "year": 1776,
+    "description": "Documento que declarou a separação das Treze Colônias britânicas da América do Norte e apresentou princípios políticos associados aos direitos e à representação.",
+    "detailedFeedback": "A independência das Treze Colônias ocorreu em um contexto influenciado pelo Iluminismo e por conflitos fiscais e políticos com a Grã-Bretanha. O processo tornou-se uma referência para outros movimentos políticos do final do século XVIII.",
+    "image": "/images/card-39.jpg"
+  },
+  {
+    "id": "card-40",
+    "phase": 2,
+    "title": "Queda da Bastilha (Revolução Francesa)",
+    "year": 1789,
+    "description": "Tomada da Bastilha em Paris em julho de 1789, símbolo do início da Revolução Francesa e da crise do Antigo Regime.",
+    "detailedFeedback": "A Queda da Bastilha ocorreu em meio a uma crise política, social e econômica na França. A Revolução Francesa aprofundou críticas ao absolutismo e às desigualdades sociais e influenciou movimentos políticos em diferentes partes do mundo.",
+    "image": "/images/card-40.jpg"
+  },
+  {
+    "id": "card-41",
+    "phase": 3,
+    "title": "Aperfeiçoamento da Máquina a Vapor (Revolução Industrial)",
+    "year": 1769,
+    "description": "Aperfeiçoamentos da máquina a vapor contribuíram para a mecanização da produção e para a expansão da Revolução Industrial, especialmente na Grã-Bretanha.",
+    "detailedFeedback": "O aperfeiçoamento da máquina a vapor esteve ligado à transformação da produção industrial. A mecanização aumentou a capacidade produtiva e contribuiu para a urbanização, o crescimento do trabalho fabril e profundas mudanças sociais.",
+    "image": "/images/card-41.jpg"
+  },
+  {
+    "id": "card-42",
+    "phase": 3,
+    "title": "Revolução Haitiana",
+    "year": 1791,
+    "description": "Revolução iniciada em Saint-Domingue que levou à independência do Haiti e à formação de uma república resultante de uma revolta de escravizados.",
+    "detailedFeedback": "A Revolução Haitiana combinou as tensões do sistema escravista com as ideias de liberdade difundidas pelas revoluções atlânticas. Seu resultado foi excepcional para a época: a independência de um Estado formado a partir de uma revolução de escravizados.",
+    "image": "/images/card-42.jpg"
+  },
+  {
+    "id": "card-43",
+    "phase": 3,
+    "title": "Vinda da Família Real Portuguesa para o Brasil",
+    "year": 1808,
+    "description": "Transferência da corte portuguesa para o Rio de Janeiro durante as Guerras Napoleônicas, acompanhada da abertura dos portos e de mudanças administrativas.",
+    "detailedFeedback": "A transferência da corte alterou profundamente a posição do Brasil dentro do Império Português. A abertura dos portos e a instalação de instituições no Rio de Janeiro contribuíram para mudanças que antecederam a Independência.",
+    "image": "/images/card-43.jpg"
+  },
+  {
+    "id": "card-44",
+    "phase": 3,
+    "title": "Proclamação da Independência do Brasil",
+    "year": 1822,
+    "description": "Ruptura política entre Brasil e Portugal, associada à atuação de D. Pedro e à formação do Estado brasileiro independente.",
+    "detailedFeedback": "A Independência resultou de um processo político iniciado antes de 7 de setembro de 1822. A permanência da corte no Brasil, a Revolução Liberal do Porto e os conflitos entre as Cortes e D. Pedro contribuíram para a ruptura.",
+    "image": "/images/card-44.jpg"
+  },
+  {
+    "id": "card-45",
+    "phase": 3,
+    "title": "Outorga da Constituição da Mandioca (1824)",
+    "year": 1824,
+    "description": "Referência ao processo constitucional do Primeiro Reinado. O projeto conhecido como Constituição da Mandioca foi elaborado em 1823, mas não foi promulgado; em 1824, D. Pedro I outorgou outra Constituição.",
+    "detailedFeedback": "Aqui é importante distinguir dois momentos: a chamada Constituição da Mandioca foi um projeto de 1823 que não entrou em vigor, enquanto a Constituição de 1824 foi outorgada por D. Pedro I. Essa diferença ajuda a entender o conflito entre a Assembleia Constituinte e o imperador.",
+    "image": "/images/card-45.jpg"
+  },
+  {
+    "id": "card-46",
+    "phase": 3,
+    "title": "Abdicação de D. Pedro I e Período Regencial",
+    "year": 1831,
+    "description": "Abdicação de D. Pedro I em favor de seu filho e início do Período Regencial, marcado por disputas políticas e revoltas provinciais.",
+    "detailedFeedback": "A abdicação ocorreu após uma combinação de crise política, oposição e dificuldades econômicas. Como D. Pedro II ainda era menor, o país passou a ser governado por regentes, período em que várias revoltas expressaram conflitos regionais e sociais.",
+    "image": "/images/card-46.jpg"
+  },
+  {
+    "id": "card-47",
+    "phase": 3,
+    "title": "Golpe da Maioridade e Início do Segundo Reinado",
+    "year": 1840,
+    "description": "Antecipação da maioridade de D. Pedro II aos 14 anos, encerrando o Período Regencial e iniciando o Segundo Reinado.",
+    "detailedFeedback": "O Golpe da Maioridade foi uma solução política para a instabilidade do período regencial. A antecipação da maioridade colocou D. Pedro II no poder e marcou a passagem para o Segundo Reinado.",
+    "image": "/images/card-47.jpg"
+  },
+  {
+    "id": "card-48",
+    "phase": 3,
+    "title": "Publicação do Manifesto Comunista e a Primavera dos Povos",
+    "year": 1848,
+    "description": "Publicação do Manifesto Comunista e onda de revoluções de 1848 na Europa, envolvendo demandas políticas, nacionais e sociais.",
+    "detailedFeedback": "1848 reuniu diferentes movimentos políticos na Europa. O Manifesto Comunista expressou uma crítica socialista ao capitalismo, enquanto a Primavera dos Povos envolveu demandas diversas, como liberalismo, nacionalismo e participação política.",
+    "image": "/images/card-48.jpg"
+  },
+  {
+    "id": "card-49",
+    "phase": 3,
+    "title": "Promulgação da Lei Eusébio de Queirós e Lei de Terras (1850)",
+    "year": 1850,
+    "description": "Duas leis imperiais de grande impacto: a Lei Eusébio de Queirós combateu o tráfico transatlântico de escravizados, enquanto a Lei de Terras regulamentou o acesso às terras devolutas.",
+    "detailedFeedback": "As duas leis de 1850 transformaram aspectos centrais da sociedade imperial. O fim do tráfico modificou o sistema escravista, enquanto a Lei de Terras estabeleceu a compra como principal forma de acesso às terras públicas, influenciando a concentração fundiária.",
+    "image": "/images/card-49.jpg"
+  },
+  {
+    "id": "card-50",
+    "phase": 3,
+    "title": "Guerra do Paraguai",
+    "year": 1864,
+    "description": "Conflito entre o Paraguai e a Tríplice Aliança formada por Brasil, Argentina e Uruguai, encerrado em 1870.",
+    "detailedFeedback": "A Guerra do Paraguai envolveu disputas políticas e territoriais na região do Prata. O conflito teve enormes custos humanos e econômicos e produziu consequências políticas importantes para os países envolvidos, especialmente para o Brasil.",
+    "image": "/images/card-50.jpg"
+  },
+  {
+    "id": "card-51",
+    "phase": 3,
+    "title": "Assinatura da Lei Áurea e Proclamação da República",
+    "year": 1888,
+    "description": "Abolição legal da escravidão em 1888 e queda da monarquia com a Proclamação da República em 1889.",
+    "detailedFeedback": "A Lei Áurea aboliu a escravidão em 1888, mas não instituiu políticas de integração social ou distribuição de terras aos libertos. No ano seguinte, a monarquia foi derrubada e a República foi proclamada, relacionando-se a uma crise mais ampla do regime imperial.",
+    "image": "/images/card-51.jpg"
+  },
+  {
+    "id": "card-52",
+    "phase": 3,
+    "title": "Guerra de Canudos e Revolta da Vacina",
+    "year": 1896,
+    "description": "Dois conflitos da Primeira República: a Guerra de Canudos ocorreu entre 1896 e 1897, enquanto a Revolta da Vacina ocorreu no Rio de Janeiro em 1904.",
+    "detailedFeedback": "Canudos e a Revolta da Vacina ocorreram em contextos diferentes. Canudos envolveu conflitos sociais e políticos no sertão baiano; a Revolta da Vacina esteve ligada à vacinação obrigatória e às reformas urbanas no Rio de Janeiro. Colocá-los juntos exige atenção às datas.",
+    "image": "/images/card-52.jpg"
+  },
+  {
+    "id": "card-53",
+    "phase": 3,
+    "title": "O Atentado de Sarajevo e a Primeira Guerra Mundial",
+    "year": 1914,
+    "description": "Assassinato do arquiduque Francisco Ferdinando em Sarajevo em 1914, seguido pela escalada de alianças e conflitos que desencadeou a Primeira Guerra Mundial.",
+    "detailedFeedback": "O atentado de Sarajevo foi o estopim imediato da Primeira Guerra Mundial, mas não foi sua única causa. Rivalidades imperialistas, nacionalismos, corrida armamentista e alianças entre potências já haviam criado um cenário de forte tensão.",
+    "image": "/images/card-53.jpg"
+  },
+  {
+    "id": "card-54",
+    "phase": 3,
+    "title": "Revolução Russa",
+    "year": 1917,
+    "description": "Processo revolucionário de 1917 que derrubou o regime czarista e levou os bolcheviques ao poder, dando origem ao primeiro Estado socialista.",
+    "detailedFeedback": "A Revolução Russa ocorreu durante a crise provocada pela Primeira Guerra Mundial e por problemas sociais e econômicos internos. A queda do czar em fevereiro foi seguida pela tomada do poder pelos bolcheviques em outubro.",
+    "image": "/images/card-54.jpg"
+  },
+  {
+    "id": "card-55",
+    "phase": 3,
+    "title": "Crash da Bolsa de Nova York e a Grande Depressão",
+    "year": 1929,
+    "description": "Crise econômica iniciada com o colapso financeiro de 1929 e transformada em uma depressão de alcance internacional durante os anos seguintes.",
+    "detailedFeedback": "O crash de 1929 foi um marco de uma crise econômica mais ampla, que envolveu problemas financeiros, produtivos e comerciais. A Grande Depressão afetou vários países e teve consequências sociais e políticas profundas.",
+    "image": "/images/card-55.jpg"
+  },
+  {
+    "id": "card-56",
+    "phase": 3,
+    "title": "Revolução de 1930 e Ascensão de Getúlio Vargas",
+    "year": 1930,
+    "description": "Movimento político-militar que derrubou Washington Luís e levou Getúlio Vargas ao governo provisório, encerrando a Primeira República.",
+    "detailedFeedback": "A Revolução de 1930 ocorreu em meio à crise da ordem oligárquica e aos efeitos da crise econômica mundial. A chegada de Vargas ao poder iniciou uma nova fase da política brasileira, marcada por centralização e transformações institucionais.",
+    "image": "/images/card-56.jpg"
+  },
+  {
+    "id": "card-57",
+    "phase": 3,
+    "title": "Outorga da CLT e Consolidação do Estado Novo",
+    "year": 1943,
+    "description": "A CLT, promulgada em 1943, reuniu normas trabalhistas durante o governo Vargas. O Estado Novo, iniciado em 1937, foi uma ditadura que centralizou o poder e restringiu direitos políticos.",
+    "detailedFeedback": "A CLT foi criada durante o Estado Novo e consolidou uma série de normas trabalhistas. A legislação social coexistiu com um regime autoritário, mostrando que avanços institucionais em determinadas áreas podem ocorrer junto à restrição de direitos políticos.",
+    "image": "/images/card-57.jpg"
+  },
+  {
+    "id": "card-58",
+    "phase": 3,
+    "title": "Invasão da Polônia e a Segunda Guerra Mundial",
+    "year": 1939,
+    "description": "Invasão da Polônia pela Alemanha em setembro de 1939, seguida pela declaração de guerra de França e Reino Unido e pelo início da Segunda Guerra Mundial na Europa.",
+    "detailedFeedback": "A invasão da Polônia é geralmente considerada o início da Segunda Guerra Mundial na Europa. O conflito, porém, foi resultado de tensões acumuladas após a Primeira Guerra, do expansionismo nazista e da crise da ordem internacional.",
+    "image": "/images/card-58.jpg"
+  },
+  {
+    "id": "card-59",
+    "phase": 3,
+    "title": "Lançamento das Bombas em Hiroshima e Início da Guerra Fria",
+    "year": 1945,
+    "description": "Uso de armas nucleares contra Hiroshima e Nagasaki em agosto de 1945 e formação, no pós-guerra, de uma ordem internacional marcada pela rivalidade entre Estados Unidos e União Soviética.",
+    "detailedFeedback": "Os bombardeios atômicos ocorreram no fim da Segunda Guerra Mundial, enquanto a Guerra Fria se consolidou posteriormente. Portanto, os dois acontecimentos estão ligados pelo contexto do pós-guerra, mas não começaram exatamente no mesmo momento.",
+    "image": "/images/card-59.jpg"
+  },
+  {
+    "id": "card-60",
+    "phase": 3,
+    "title": "Campanha \"O Petróleo é Nosso\" e Fundação da Petrobras",
+    "year": 1953,
+    "description": "Campanha nacionalista em defesa do controle brasileiro sobre o petróleo, associada à criação da Petrobras em 1953.",
+    "detailedFeedback": "A campanha 'O Petróleo é Nosso' expressou disputas sobre o papel do Estado e do capital estrangeiro no setor petrolífero. A criação da Petrobras em 1953 materializou uma política de forte participação estatal na exploração do petróleo.",
+    "image": "/images/card-60.jpg"
+  },
+  {
+    "id": "card-61",
+    "phase": 3,
+    "title": "Construção de Brasília e os Anos JK",
+    "year": 1960,
+    "description": "Construção e inauguração de Brasília durante o governo Juscelino Kubitschek, parte de um projeto de modernização e integração territorial.",
+    "detailedFeedback": "Brasília foi inaugurada em 1960 dentro do projeto desenvolvimentista de Juscelino Kubitschek. A construção da nova capital simbolizou a modernização pretendida pelo governo e incentivou a ocupação e integração do interior do país.",
+    "image": "/images/card-61.jpg"
+  },
+  {
+    "id": "card-62",
+    "phase": 3,
+    "title": "Golpe Civil-Militar de 1964 e Promulgação do AI-5",
+    "year": 1964,
+    "description": "Deposição de João Goulart em 1964 e posterior endurecimento do regime com o AI-5, decretado em 1968.",
+    "detailedFeedback": "O golpe de 1964 iniciou uma ditadura que durou até 1985. O AI-5 não foi promulgado no mesmo ano do golpe: ele foi decretado em 1968 e representou um importante endurecimento da repressão política.",
+    "image": "/images/card-62.jpg"
+  },
+  {
+    "id": "card-63",
+    "phase": 3,
+    "title": "Campanha das Diretas Já",
+    "year": 1984,
+    "description": "Grande mobilização social e política em defesa de eleições diretas para a Presidência da República durante o processo de redemocratização.",
+    "detailedFeedback": "As Diretas Já fizeram parte da mobilização pela redemocratização, mas a emenda que previa eleições diretas para presidente não foi aprovada. A transição continuou por meio de eleições indiretas em 1985 e posteriormente avançou com a Constituição de 1988.",
+    "image": "/images/card-63.jpg"
+  },
+  {
+    "id": "card-64",
+    "phase": 3,
+    "title": "Promulgação da Constituição Cidadã de 1988",
+    "year": 1988,
+    "description": "Promulgação da Constituição de 1988, que ampliou direitos civis, políticos e sociais e consolidou instituições democráticas após a ditadura.",
+    "detailedFeedback": "A Constituição de 1988 foi resultado do processo de redemocratização e da Assembleia Nacional Constituinte. Ela ampliou a proteção de direitos e estabeleceu novas bases institucionais para a democracia brasileira.",
+    "image": "/images/card-64.jpg"
+  },
+  {
+    "id": "card-65",
+    "phase": 3,
+    "title": "Queda do Muro de Berlim e Fim da URSS",
+    "year": 1989,
+    "description": "Queda do Muro de Berlim em 1989, seguida por transformações políticas no Leste Europeu e pela dissolução da União Soviética em 1991.",
+    "detailedFeedback": "A queda do Muro de Berlim, em 1989, tornou-se um símbolo do enfraquecimento dos regimes socialistas do Leste Europeu. O fim da URSS ocorreu posteriormente, em 1991, portanto os dois acontecimentos fazem parte do mesmo processo, mas não são simultâneos.",
+    "image": "/images/card-65.jpg"
+  }
+]
