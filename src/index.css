@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme {
+  --color-historical-card-bg: #ffe7c2;
+  --color-historical-card-text: #381313;
+}
