@@ -92,6 +92,7 @@ function App() {
                       title={eventoPosicionado.title}
                       description={eventoPosicionado.description}
                       image={eventoPosicionado.image}
+                      detailedFeedback={eventoPosicionado.detailedFeedback}
                     />
                   )}
                 </DropZone>
@@ -110,6 +111,7 @@ function App() {
                 title={evento.title}
                 description={evento.description}
                 image={evento.image}
+                detailedFeedback={evento.detailedFeedback}
               />
             ))}
           </section>
