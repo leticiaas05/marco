@@ -121,7 +121,7 @@
     "phase": 1,
     "title": "Hégira e a Expansão Islâmica",
     "year": 622,
-    "description": "Migração de Muhammad de Meca para Medina em 622, marco inicial do calendário islâmico e ponto de partida para a expansão da comunidade muçulmana.",
+    "description": "Migração de Muhammad de Meca para Medina, marco inicial do calendário islâmico e ponto de partida para a expansão da comunidade muçulmana.",
     "detailedFeedback": "A Hégira marcou uma transformação política e religiosa na comunidade de Muhammad. A partir de Medina, o islamismo se expandiu por diferentes regiões, formando sociedades e redes comerciais que influenciaram profundamente o mundo medieval.",
     "image": "/images/card-14.jpg"
   },
@@ -194,7 +194,7 @@
     "title": "Tomada de Constantinopla pelos Otomanos",
     "year": 1453,
     "description": "Conquista de Constantinopla pelo Império Otomano, encerrando o Império Bizantino e alterando as relações políticas e comerciais entre Europa e Oriente.",
-    "detailedFeedback": "A tomada de Constantinopla em 1453 é tradicionalmente usada como um dos marcos da passagem da Idade Média para a Modernidade. A expansão otomana também estimulou a busca europeia por novas rotas comerciais, embora esse processo tenha múltiplas causas.",
+    "detailedFeedback": "A tomada de Constantinopla é tradicionalmente usada como um dos marcos da passagem da Idade Média para a Modernidade. A expansão otomana também estimulou a busca europeia por novas rotas comerciais, embora esse processo tenha múltiplas causas.",
     "image": "/images/card-22.jpg"
   },
   {
@@ -265,7 +265,7 @@
     "phase": 2,
     "title": "Expedição de Martim Afonso de Sousa e as Capitanias Hereditárias",
     "year": 1530,
-    "description": "Expedição portuguesa enviada ao Brasil no início da década de 1530, seguida pela implantação das Capitanias Hereditárias em 1534.",
+    "description": "Expedição portuguesa enviada ao Brasil, seguida pela implantação das Capitanias Hereditárias.",
     "detailedFeedback": "A expedição de Martim Afonso e a criação das Capitanias fizeram parte da tentativa portuguesa de ocupar e administrar efetivamente o território. São processos relacionados, mas ocorreram em momentos diferentes da década de 1530.",
     "image": "/images/card-30.jpg"
   },
@@ -328,7 +328,7 @@
     "phase": 2,
     "title": "Conjuração Mineira e Conjuração Baiana",
     "year": 1789,
-    "description": "Movimentos de contestação à ordem colonial portuguesa, ocorridos em Minas Gerais em 1789 e na Bahia em 1798, com diferenças sociais e políticas importantes.",
+    "description": "Movimentos de contestação à ordem colonial portuguesa, ocorridos em Minas Gerais e na Bahia, com diferenças sociais e políticas importantes.",
     "detailedFeedback": "A Inconfidência Mineira tinha participação predominante de setores das elites locais, enquanto a Conjuração Baiana contou com participação popular mais ampla e defendeu pautas sociais como a abolição. Apesar das diferenças, ambas questionaram a ordem colonial.",
     "image": "/images/card-37.jpg"
   },
@@ -355,7 +355,7 @@
     "phase": 2,
     "title": "Queda da Bastilha (Revolução Francesa)",
     "year": 1789,
-    "description": "Tomada da Bastilha em Paris em julho de 1789, símbolo do início da Revolução Francesa e da crise do Antigo Regime.",
+    "description": "Tomada da Bastilha em Paris, símbolo do início da Revolução Francesa e da crise do Antigo Regime.",
     "detailedFeedback": "A Queda da Bastilha ocorreu em meio a uma crise política, social e econômica na França. A Revolução Francesa aprofundou críticas ao absolutismo e às desigualdades sociais e influenciou movimentos políticos em diferentes partes do mundo.",
     "image": "/images/card-40.jpg"
   },
@@ -398,9 +398,9 @@
   {
     "id": "card-45",
     "phase": 3,
-    "title": "Outorga da Constituição da Mandioca (1824)",
+    "title": "Outorga da Constituição da Mandioca",
     "year": 1824,
-    "description": "Referência ao processo constitucional do Primeiro Reinado. O projeto conhecido como Constituição da Mandioca foi elaborado em 1823, mas não foi promulgado; em 1824, D. Pedro I outorgou outra Constituição.",
+    "description": "Referência ao processo constitucional do Primeiro Reinado. O projeto conhecido como Constituição da Mandioca, mas não foi promulgado; um ano depois, D. Pedro I outorgou outra Constituição.",
     "detailedFeedback": "Aqui é importante distinguir dois momentos: a chamada Constituição da Mandioca foi um projeto de 1823 que não entrou em vigor, enquanto a Constituição de 1824 foi outorgada por D. Pedro I. Essa diferença ajuda a entender o conflito entre a Assembleia Constituinte e o imperador.",
     "image": "/images/card-45.jpg"
   },
@@ -427,14 +427,14 @@
     "phase": 3,
     "title": "Publicação do Manifesto Comunista e a Primavera dos Povos",
     "year": 1848,
-    "description": "Publicação do Manifesto Comunista e onda de revoluções de 1848 na Europa, envolvendo demandas políticas, nacionais e sociais.",
+    "description": "Publicação do Manifesto Comunista e onda de revoluções na Europa, envolvendo demandas políticas, nacionais e sociais.",
     "detailedFeedback": "1848 reuniu diferentes movimentos políticos na Europa. O Manifesto Comunista expressou uma crítica socialista ao capitalismo, enquanto a Primavera dos Povos envolveu demandas diversas, como liberalismo, nacionalismo e participação política.",
     "image": "/images/card-48.jpg"
   },
   {
     "id": "card-49",
     "phase": 3,
-    "title": "Promulgação da Lei Eusébio de Queirós e Lei de Terras (1850)",
+    "title": "Promulgação da Lei Eusébio de Queirós e Lei de Terras",
     "year": 1850,
     "description": "Duas leis imperiais de grande impacto: a Lei Eusébio de Queirós combateu o tráfico transatlântico de escravizados, enquanto a Lei de Terras regulamentou o acesso às terras devolutas.",
     "detailedFeedback": "As duas leis de 1850 transformaram aspectos centrais da sociedade imperial. O fim do tráfico modificou o sistema escravista, enquanto a Lei de Terras estabeleceu a compra como principal forma de acesso às terras públicas, influenciando a concentração fundiária.",
@@ -454,7 +454,7 @@
     "phase": 3,
     "title": "Assinatura da Lei Áurea e Proclamação da República",
     "year": 1888,
-    "description": "Abolição legal da escravidão em 1888 e queda da monarquia com a Proclamação da República em 1889.",
+    "description": "Abolição legal da escravidão e queda da monarquia com a Proclamação da República.",
     "detailedFeedback": "A Lei Áurea aboliu a escravidão em 1888, mas não instituiu políticas de integração social ou distribuição de terras aos libertos. No ano seguinte, a monarquia foi derrubada e a República foi proclamada, relacionando-se a uma crise mais ampla do regime imperial.",
     "image": "/images/card-51.jpg"
   },
@@ -463,7 +463,7 @@
     "phase": 3,
     "title": "Guerra de Canudos e Revolta da Vacina",
     "year": 1896,
-    "description": "Dois conflitos da Primeira República: a Guerra de Canudos ocorreu entre 1896 e 1897, enquanto a Revolta da Vacina ocorreu no Rio de Janeiro em 1904.",
+    "description": "Dois conflitos da Primeira República: a Guerra de Canudos ocorreu no interior da Bahia, enquanto a Revolta da Vacina ocorreu no Rio de Janeiro.",
     "detailedFeedback": "Canudos e a Revolta da Vacina ocorreram em contextos diferentes. Canudos envolveu conflitos sociais e políticos no sertão baiano; a Revolta da Vacina esteve ligada à vacinação obrigatória e às reformas urbanas no Rio de Janeiro. Colocá-los juntos exige atenção às datas.",
     "image": "/images/card-52.jpg"
   },
@@ -481,7 +481,7 @@
     "phase": 3,
     "title": "Revolução Russa",
     "year": 1917,
-    "description": "Processo revolucionário de 1917 que derrubou o regime czarista e levou os bolcheviques ao poder, dando origem ao primeiro Estado socialista.",
+    "description": "Processo revolucionário que derrubou o regime czarista e levou os bolcheviques ao poder, dando origem ao primeiro Estado socialista.",
     "detailedFeedback": "A Revolução Russa ocorreu durante a crise provocada pela Primeira Guerra Mundial e por problemas sociais e econômicos internos. A queda do czar em fevereiro foi seguida pela tomada do poder pelos bolcheviques em outubro.",
     "image": "/images/card-54.jpg"
   },
@@ -490,14 +490,14 @@
     "phase": 3,
     "title": "Quebra da Bolsa de Nova York e a Grande Depressão",
     "year": 1929,
-    "description": "Crise econômica iniciada com o colapso financeiro de 1929 e transformada em uma depressão de alcance internacional durante os anos seguintes.",
+    "description": "Crise econômica iniciada com um colapso financeiro e transformada em uma depressão de alcance internacional durante os anos seguintes.",
     "detailedFeedback": "O crash de 1929 foi um marco de uma crise econômica mais ampla, que envolveu problemas financeiros, produtivos e comerciais. A Grande Depressão afetou vários países e teve consequências sociais e políticas profundas.",
     "image": "/images/card-55.jpg"
   },
   {
     "id": "card-56",
     "phase": 3,
-    "title": "Revolução de 1930 e Ascensão de Getúlio Vargas",
+    "title": "Fim da República Velha e Ascensão de Getúlio Vargas",
     "year": 1930,
     "description": "Movimento político-militar que derrubou Washington Luís e levou Getúlio Vargas ao governo provisório, encerrando a Primeira República.",
     "detailedFeedback": "A Revolução de 1930 ocorreu em meio à crise da ordem oligárquica e aos efeitos da crise econômica mundial. A chegada de Vargas ao poder iniciou uma nova fase da política brasileira, marcada por centralização e transformações institucionais.",
