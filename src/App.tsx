@@ -1,81 +1,53 @@
-
-import { useState } from "react";
 import {
   DndContext,
   type DragEndEvent,
 } from "@dnd-kit/core";
 
+import { useGame } from "./hooks/useGame";
+import eventos from "./data/events";
+
 import { Timeline } from "./components/Timeline/Timeline";
 import { DropZone } from "./components/Dropzone/DropZone";
 import { EventCard } from "./components/EventCard/EventCard";
-import eventsData from "./data/events.json";
-
-interface HistoricalEvent {
-  id: string;
-  phase: number;
-  title: string;
-  year: number;
-  description: string;
-  image: string;
-}
-
-const EVENTS = eventsData as HistoricalEvent[];
-const CURRENT_PHASE = 3;
-
-const phaseEvents = EVENTS
-  .filter((event) => event.phase === CURRENT_PHASE)
-  .slice(0, 3);
 
 function App() {
-  const [placements, setPlacements] = useState<Record<string, string>>({});
-  
-function handleDragEnd(event: DragEndEvent) {
-  const { active, over } = event;
+  const {
+    faseAtual,
+    eventosDaFase,
+    posicionamentos,
+    eventosNaMao,
+    resultado,
+    faseConcluida,
+    podeVerificar,
+    podeAvancar,
+    jogoConcluido,
+    posicionarEvento,
+    verificar,
+    avancarFase,
+    reiniciarFase,
+  } = useGame(eventos);
 
-  if (!over) return;
+  function handleDragEnd(event: DragEndEvent) {
+    const { active, over } = event;
 
-  const eventId = String(active.id);
-  const zoneId = String(over.id);
+    if (!over) return;
 
-  if (!zoneId.startsWith("timeline-position-")) return;
+    const eventoId = String(active.id);
+    const zonaId = String(over.id);
 
-  setPlacements((previous) => {
-    const sourceZone = Object.keys(previous).find(
-      (key) => previous[key] === eventId
-    );
-
-    const targetEventId = previous[zoneId];
-
-    if (sourceZone === zoneId) {
-      return previous;
+    if (!/^timeline-position-[0-2]$/.test(zonaId)) {
+      return;
     }
 
-    const updated = { ...previous };
+    posicionarEvento(eventoId, zonaId);
+  }
 
-    if (sourceZone) {
-      if (targetEventId) {
-        updated[sourceZone] = targetEventId;
-      } else {
-        delete updated[sourceZone];
-      }
-    }
-
-    updated[zoneId] = eventId;
-
-    return updated;
-  });
-}
-
-
-  const placedEventIds = Object.values(placements);
-
-  const availableEvents = phaseEvents.filter(
-    (event) => !placedEventIds.includes(event.id)
-  );
+  const anosOrdenados = [...eventosDaFase]
+    .sort((a, b) => a.year - b.year)
+    .map((evento) => evento.year);
 
   return (
     <main className="min-h-screen bg-[#FFE7C2] text-[#381313]">
-      {/* Cabeçalho */}
       <header className="flex items-center justify-between px-5 py-4 sm:px-10">
         <h1 className="text-3xl font-extrabold sm:text-4xl">
           Marco.
@@ -85,7 +57,9 @@ function handleDragEnd(event: DragEndEvent) {
           type="button"
           className="font-bold transition-opacity hover:opacity-70"
           onClick={() =>
-            alert("As instruções do jogo serão implementadas posteriormente.")
+            alert(
+              "Arraste os eventos para as posições da timeline, da mais antiga para a mais recente. Depois, verifique sua resposta."
+            )
           }
         >
           Como jogar?
@@ -94,49 +68,104 @@ function handleDragEnd(event: DragEndEvent) {
 
       <DndContext onDragEnd={handleDragEnd}>
         <div className="min-h-[calc(100vh-76px)] bg-[#381313] px-4 py-8 sm:px-6 sm:py-10">
-          {/* Timeline e posições */}
           <Timeline
-            currentPhase={CURRENT_PHASE}
-            years={phaseEvents.map((event) => event.year)}
+            currentPhase={faseAtual}
+            years={anosOrdenados}
           >
-            {phaseEvents.map((event, index) => {
-            const zoneId = `timeline-position-${index}`;
-            const placedEventId = placements[zoneId];
+            {Array.from({ length: 3 }, (_, index) => {
+              const zonaId = `timeline-position-${index}`;
+              const eventoId = posicionamentos[zonaId];
 
-            const placedEvent = phaseEvents.find(
-              (item) => item.id === placedEventId
-            );
+              const eventoPosicionado = eventosDaFase.find(
+                (evento) => evento.id === eventoId
+              );
 
-            return (
-              <DropZone key={zoneId} id={zoneId} index={index}>
-                {placedEvent && (
-                  <EventCard
-                    id={placedEvent.id}
-                    title={placedEvent.title}
-                    description={placedEvent.description}
-                    image={placedEvent.image}
-                  />
-                )}
-              </DropZone>
-            );
-          })}
+              return (
+                <DropZone
+                  key={zonaId}
+                  id={zonaId}
+                  index={index}
+                >
+                  {eventoPosicionado && (
+                    <EventCard
+                      id={eventoPosicionado.id}
+                      title={eventoPosicionado.title}
+                      description={eventoPosicionado.description}
+                      image={eventoPosicionado.image}
+                    />
+                  )}
+                </DropZone>
+              );
+            })}
           </Timeline>
 
-          {/* Cards que ainda não foram posicionados */}
           <section
             className="mx-auto mt-10 grid w-full max-w-5xl grid-cols-1 items-start gap-6 sm:grid-cols-2 md:grid-cols-3"
             aria-label="Eventos disponíveis para organizar"
           >
-            {availableEvents.map((event) => (
+            {eventosNaMao.map((evento) => (
               <EventCard
-                key={event.id}
-                id={event.id}
-                title={event.title}
-                description={event.description}
-                image={event.image}
+                key={evento.id}
+                id={evento.id}
+                title={evento.title}
+                description={evento.description}
+                image={evento.image}
               />
             ))}
           </section>
+
+          <div className="mx-auto mt-8 flex max-w-5xl flex-wrap justify-center gap-4">
+            {!faseConcluida && (
+              <>
+                <button
+                  type="button"
+                  onClick={reiniciarFase}
+                  className="rounded-xl border-2 border-[#FFE7C2] px-5 py-3 font-bold text-[#FFE7C2] transition-opacity hover:opacity-80"
+                >
+                  Limpar posições
+                </button>
+
+                <button
+                  type="button"
+                  onClick={verificar}
+                  disabled={!podeVerificar}
+                  className="rounded-xl bg-[#FFE7C2] px-5 py-3 font-bold text-[#381313] transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
+                >
+                  Verificar resposta
+                </button>
+              </>
+            )}
+
+            {podeAvancar && (
+              <button
+                type="button"
+                onClick={avancarFase}
+                className="rounded-xl bg-[#FFE7C2] px-5 py-3 font-bold text-[#381313] transition-opacity hover:opacity-90"
+              >
+                Avançar para a próxima fase
+              </button>
+            )}
+          </div>
+
+          {resultado && (
+            <p
+              role="status"
+              className="mx-auto mt-6 max-w-3xl text-center font-bold text-[#FFE7C2]"
+            >
+              {resultado.concluida
+                ? "Parabéns! Você organizou os eventos corretamente!"
+                : `Você acertou ${resultado.quantidadeAcertos} de ${resultado.totalEventos}. Tente novamente!`}
+            </p>
+          )}
+
+          {jogoConcluido && (
+            <p
+              role="status"
+              className="mx-auto mt-6 max-w-3xl text-center text-xl font-extrabold text-[#FFE7C2]"
+            >
+              Você concluiu todas as fases do Marco!
+            </p>
+          )}
         </div>
       </DndContext>
     </main>
