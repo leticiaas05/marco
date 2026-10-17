@@ -8,6 +8,7 @@ interface EventCardProps {
   description: string;
   detailedFeedback: string;
   image: string;
+  draggable?: boolean;
 }
 
 export function EventCard({
@@ -16,6 +17,7 @@ export function EventCard({
   description,
   detailedFeedback,
   image,
+  draggable = true,
 }: EventCardProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -25,7 +27,10 @@ export function EventCard({
     setNodeRef,
     transform,
     isDragging,
-  } = useDraggable({ id });
+  } = useDraggable({
+    id,
+    disabled: !draggable,
+  });
 
   const style = transform
     ? {
@@ -37,23 +42,25 @@ export function EventCard({
     <>
       <article
         ref={setNodeRef}
-        style={style}
-        {...listeners}
-        {...attributes}
-        className={`relative w-full h-60 shrink-0 overflow-hidden rounded-2xl bg-historical-card-bg text-historical-card-text shadow-md cursor-grab active:cursor-grabbing select-none touch-none ${
-          isDragging
-            ? "opacity-50 z-50 shadow-2xl"
-            : "opacity-100"
+        style={draggable ? style : undefined}
+        {...(draggable ? listeners : {})}
+        {...(draggable ? attributes : {})}
+        className={`relative h-60 w-full shrink-0 overflow-hidden rounded-2xl bg-historical-card-bg text-historical-card-text shadow-md select-none ${
+          draggable
+            ? `cursor-grab active:cursor-grabbing touch-none ${
+                isDragging ? "z-50 opacity-50 shadow-2xl" : "opacity-100"
+              }`
+            : "cursor-default"
         }`}
       >
         <button
           type="button"
           aria-label={`Consultar contexto histórico: ${title}`}
           aria-haspopup="dialog"
-          onPointerDown={(e) => e.stopPropagation()}
-          onKeyDown={(e) => e.stopPropagation()}
-          onClick={(e) => {
-            e.stopPropagation();
+          onPointerDown={(event) => event.stopPropagation()}
+          onKeyDown={(event) => event.stopPropagation()}
+          onClick={(event) => {
+            event.stopPropagation();
             setIsModalOpen(true);
           }}
           className="absolute right-2 top-2 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-[#381313]/90 text-[#FFE7C2] shadow-md transition-colors hover:bg-[#381313] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FFE7C2]"
@@ -76,7 +83,7 @@ export function EventCard({
 
         <img
           src={image}
-          className="h-24 w-full object-cover pointer-events-none"
+          className="pointer-events-none h-24 w-full object-cover"
           alt={title}
           draggable={false}
         />

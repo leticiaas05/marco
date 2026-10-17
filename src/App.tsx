@@ -9,6 +9,8 @@ import eventos from "./data/events";
 import { Timeline } from "./components/Timeline/Timeline";
 import { DropZone } from "./components/Dropzone/DropZone";
 import { EventCard } from "./components/EventCard/EventCard";
+import { FinalTimeline } from "./components/FinalTimeline/FinalTimeline";
+import { getFinalTimelineEvents } from "./utils/finalTimelineStorage";
 
 function App() {
   const {
@@ -25,6 +27,7 @@ function App() {
     verificar,
     avancarFase,
     reiniciarFase,
+    reiniciarJogo,
   } = useGame(eventos);
 
   function handleDragEnd(event: DragEndEvent) {
@@ -40,6 +43,46 @@ function App() {
     }
 
     posicionarEvento(eventoId, zonaId);
+  }
+
+  if (jogoConcluido) {
+    const eventosFinais = getFinalTimelineEvents();
+
+    return (
+      <main className="min-h-screen bg-[#FFE7C2] p-8 text-[#381313]">
+        <header className="mb-8 text-center">
+          <h1 className="text-3xl font-extrabold sm:text-4xl">
+            Marco.
+          </h1>
+
+          <p className="mt-4 text-xl font-bold">
+            Parabéns! Você concluiu todas as fases!
+          </p>
+
+          <p className="mt-2">
+            Confira a linha do tempo com os eventos que você organizou.
+          </p>
+        </header>
+
+        {eventosFinais.length === 9 ? (
+          <FinalTimeline events={eventosFinais} />
+        ) : (
+          <p className="text-center">
+            Não foi possível carregar os eventos da timeline final.
+          </p>
+        )}
+
+        <div className="mt-10 flex justify-center">
+          <button
+            type="button"
+            onClick={reiniciarJogo}
+            className="rounded-xl bg-[#381313] px-8 py-3 font-bold text-[#FFE7C2] shadow-md transition-all hover:-translate-y-0.5 hover:bg-[#542323] hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#381313]"
+          >
+            Jogar novamente
+          </button>
+        </div>
+      </main>
+    );
   }
 
   const anosOrdenados = [...eventosDaFase]
@@ -58,7 +101,7 @@ function App() {
           className="font-bold transition-opacity hover:opacity-70"
           onClick={() =>
             alert(
-              "Arraste os eventos para as posições da timeline, da mais antiga para a mais recente. Depois, verifique sua resposta."
+              "Arraste os eventos para as posições da timeline, da mais antiga para a mais recente. Depois, verifique sua resposta.",
             )
           }
         >
@@ -77,7 +120,7 @@ function App() {
               const eventoId = posicionamentos[zonaId];
 
               const eventoPosicionado = eventosDaFase.find(
-                (evento) => evento.id === eventoId
+                (evento) => evento.id === eventoId,
               );
 
               return (
@@ -92,7 +135,9 @@ function App() {
                       title={eventoPosicionado.title}
                       description={eventoPosicionado.description}
                       image={eventoPosicionado.image}
-                      detailedFeedback={eventoPosicionado.detailedFeedback}
+                      detailedFeedback={
+                        eventoPosicionado.detailedFeedback
+                      }
                     />
                   )}
                 </DropZone>
@@ -157,15 +202,6 @@ function App() {
               {resultado.concluida
                 ? "Parabéns! Você organizou os eventos corretamente!"
                 : `Você acertou ${resultado.quantidadeAcertos} de ${resultado.totalEventos}. Tente novamente!`}
-            </p>
-          )}
-
-          {jogoConcluido && (
-            <p
-              role="status"
-              className="mx-auto mt-6 max-w-3xl text-center text-xl font-extrabold text-[#FFE7C2]"
-            >
-              Você concluiu todas as fases do Marco!
             </p>
           )}
         </div>

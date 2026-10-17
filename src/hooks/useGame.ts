@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Evento } from "../types/events";
 import {
   verificarResposta,
@@ -7,6 +7,10 @@ import {
   type ResultadoFase,
   type Posicionamentos,
 } from "../utils/gameLogic";
+import {
+  savePhaseEvents,
+  clearFinalTimelineEvents,
+} from "../utils/finalTimelineStorage";
 
 type Fase = 1 | 2 | 3;
 
@@ -25,6 +29,7 @@ interface UseGameReturn {
   verificar: () => void;
   avancarFase: () => void;
   reiniciarFase: () => void;
+  reiniciarJogo: () => void;
 }
 
 export function useGame(eventos: Evento[]): UseGameReturn {
@@ -42,6 +47,10 @@ export function useGame(eventos: Evento[]): UseGameReturn {
 
   const [fasesConcluidas, setFasesConcluidas] =
     useState<Fase[]>([]);
+
+  useEffect(() => {
+    savePhaseEvents(faseAtual, eventosDaFase);
+  }, [faseAtual, eventosDaFase]);
 
   const faseConcluida = fasesConcluidas.includes(faseAtual);
   const podeAvancar = faseConcluida && faseAtual < 3;
@@ -145,6 +154,16 @@ export function useGame(eventos: Evento[]): UseGameReturn {
     setResultado(null);
   }
 
+  function reiniciarJogo(): void {
+    clearFinalTimelineEvents();
+
+    setFaseAtual(1);
+    setEventosDaFase(selecionarEventosDaFase(eventos, 1));
+    setPosicionamentos({});
+    setResultado(null);
+    setFasesConcluidas([]);
+  }
+
   return {
     faseAtual,
     eventosDaFase,
@@ -160,5 +179,6 @@ export function useGame(eventos: Evento[]): UseGameReturn {
     verificar,
     avancarFase,
     reiniciarFase,
+    reiniciarJogo,
   };
 }
