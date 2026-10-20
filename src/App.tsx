@@ -11,8 +11,14 @@ import { DropZone } from "./components/Dropzone/DropZone";
 import { EventCard } from "./components/EventCard/EventCard";
 import { FinalTimeline } from "./components/FinalTimeline/FinalTimeline";
 import { getFinalTimelineEvents } from "./utils/finalTimelineStorage";
+import { useState } from "react";
+import { HomePage } from "./components/HomePage/HomePage";
+import { HowToPlayModal } from "./components/HowToPlayModal/HowToPlayModal"; // <-- Importado aqui
 
 function App() {
+  const [iniciou, setIniciou] = useState(false);
+  const [modalComoJogarAberto, setModalComoJogarAberto] = useState(false); // <-- Estado do Modal
+
   const {
     faseAtual,
     eventosDaFase,
@@ -85,13 +91,29 @@ function App() {
     );
   }
 
+  if (!iniciou) {
+    return (
+      <>
+        <HomePage
+          onStart={() => setIniciou(true)}
+          onHowToPlay={() => setModalComoJogarAberto(true)}
+        />
+        
+        <HowToPlayModal
+          isOpen={modalComoJogarAberto}
+          onClose={() => setModalComoJogarAberto(false)}
+        />
+      </>
+    );
+  }
+
   const anosOrdenados = [...eventosDaFase]
     .sort((a, b) => a.year - b.year)
     .map((evento) => evento.year);
 
   return (
-    <main className="min-h-screen bg-[#FFE7C2] text-[#381313]">
-      <header className="flex items-center justify-between px-5 py-4 sm:px-10">
+    <main className="h-screen overflow-hidden bg-[#FFE7C2] text-[#381313]">
+      <header className="flex h-16 shrink-0 items-center justify-between px-5 py-3 sm:px-10">
         <h1 className="text-3xl font-extrabold sm:text-4xl">
           Marco.
         </h1>
@@ -99,18 +121,14 @@ function App() {
         <button
           type="button"
           className="font-bold transition-opacity hover:opacity-70"
-          onClick={() =>
-            alert(
-              "Arraste os eventos para as posições da timeline, da mais antiga para a mais recente. Depois, verifique sua resposta.",
-            )
-          }
+          onClick={() => setModalComoJogarAberto(true)} // <-- Abre o modal
         >
           Como jogar?
         </button>
       </header>
 
       <DndContext onDragEnd={handleDragEnd}>
-        <div className="min-h-[calc(100vh-76px)] bg-[#381313] px-4 py-8 sm:px-6 sm:py-10">
+        <div className="flex h-[calc(100dvh-4rem)] flex-col overflow-hidden bg-[#381313] px-4 py-3 sm:px-6 sm:py-4">
           <Timeline
             currentPhase={faseAtual}
             years={anosOrdenados}
@@ -146,7 +164,7 @@ function App() {
           </Timeline>
 
           <section
-            className="mx-auto mt-10 grid w-full max-w-5xl grid-cols-1 items-start gap-6 sm:grid-cols-2 md:grid-cols-3"
+            className="mx-auto mt-4 grid w-full max-w-5xl shrink-0 grid-cols-1 items-start gap-4 sm:grid-cols-2 md:grid-cols-3"
             aria-label="Eventos disponíveis para organizar"
           >
             {eventosNaMao.map((evento) => (
@@ -161,7 +179,7 @@ function App() {
             ))}
           </section>
 
-          <div className="mx-auto mt-8 flex max-w-5xl flex-wrap justify-center gap-4">
+          <div className="mx-auto mt-4 flex shrink-0 max-w-5xl flex-wrap justify-center gap-3">
             {!faseConcluida && (
               <>
                 <button
@@ -197,7 +215,7 @@ function App() {
           {resultado && (
             <p
               role="status"
-              className="mx-auto mt-6 max-w-3xl text-center font-bold text-[#FFE7C2]"
+              className="mx-auto mt-3 shrink-0 max-w-3xl text-center text-sm font-bold text-[#FFE7C2]"
             >
               {resultado.concluida
                 ? "Parabéns! Você organizou os eventos corretamente!"
@@ -206,6 +224,11 @@ function App() {
           )}
         </div>
       </DndContext>
+
+      <HowToPlayModal
+        isOpen={modalComoJogarAberto}
+        onClose={() => setModalComoJogarAberto(false)}
+      />
     </main>
   );
 }

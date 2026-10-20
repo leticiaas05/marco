@@ -45,7 +45,7 @@ export function EventCard({
         style={draggable ? style : undefined}
         {...(draggable ? listeners : {})}
         {...(draggable ? attributes : {})}
-        className={`relative h-60 w-full shrink-0 overflow-hidden rounded-2xl bg-historical-card-bg text-historical-card-text shadow-md select-none ${
+        className={`relative flex min-h-[190px] w-full shrink-0 flex-col overflow-hidden rounded-2xl bg-historical-card-bg text-historical-card-text shadow-md select-none ${
           draggable
             ? `cursor-grab active:cursor-grabbing touch-none ${
                 isDragging ? "z-50 opacity-50 shadow-2xl" : "opacity-100"
@@ -83,17 +83,17 @@ export function EventCard({
 
         <img
           src={image}
-          className="pointer-events-none h-24 w-full object-cover"
+          className="pointer-events-none h-[clamp(56px,9vh,76px)] w-full shrink-0 object-cover"
           alt={title}
           draggable={false}
         />
 
-        <div className="px-4 py-2">
-          <h2 className="text-center text-sm font-bold leading-tight">
+        <div className="flex-1 px-3 py-2">
+          <h2 className="text-center text-xs font-bold leading-tight sm:text-sm">
             {title}
           </h2>
 
-          <p className="mt-1 text-justify text-xs leading-snug">
+          <p className="mt-1 text-justify text-[11px] leading-tight sm:text-xs">
             {description}
           </p>
         </div>

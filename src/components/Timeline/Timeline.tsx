@@ -25,22 +25,22 @@ export const Timeline: React.FC<TimelineProps> = ({
 
   return (
     <section
-      className="w-full rounded-2xl bg-[#381313] p-4 text-[#FFE7C2] sm:p-6"
+      className="w-full shrink-0 rounded-2xl bg-[#381313] p-3 text-[#FFE7C2] sm:p-4"
       aria-label="Linha do tempo dos eventos históricos"
     >
-      <header className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+      <header className="mb-4 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="text-xs font-bold uppercase tracking-widest opacity-75">
             Fase {currentPhase} de 3
           </p>
 
-          <h2 className="mt-1 text-xl font-extrabold sm:text-2xl">
+          <h2 className="mt-1 text-lg font-extrabold sm:text-xl">
             {phaseTitle}
           </h2>
         </div>
 
         <span className="text-sm font-medium opacity-80">
-          Organize os eventos cronologicamente
+          Organize os eventos cronologicamente na linha do tempo
         </span>
       </header>
 
@@ -48,17 +48,16 @@ export const Timeline: React.FC<TimelineProps> = ({
         {/* Régua temporal */}
         <div
           aria-hidden="true"
-          className="absolute left-[-24px] right-[-24px] top-[39px] hidden h-1 bg-[#FFE7C2] md:block lg:left-[-32px] lg:right-[-32px]"
+          className="absolute left-[-16px] right-[-16px] top-[34px] hidden h-1 bg-[#FFE7C2] md:block lg:left-[-24px] lg:right-[-24px]"
         />
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-6">
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-3 md:gap-4">
           {positions.map((position, index) => (
             <div
               key={index}
               className="relative flex min-w-0 flex-col"
             >
-              {/* Ano e marcador */}
-              <div className="relative mb-4 flex flex-col items-center gap-2">
+              <div className="relative mb-2 flex flex-col items-center gap-1">
                 <span className="text-sm font-medium">
                   {years[index] ?? `Posição ${index + 1}`}
                 </span>
@@ -74,7 +73,7 @@ export const Timeline: React.FC<TimelineProps> = ({
                 />
               </div>
 
-              <div className="mt-6 md:mt-8">
+              <div className="mt-2 md:mt-5">
                 {position}
               </div>
             </div>

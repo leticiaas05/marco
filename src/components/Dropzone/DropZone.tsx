@@ -19,20 +19,20 @@ export const DropZone = ({
       ref={setNodeRef}
       data-drop-active={isOver}
       className={`
-        relative flex min-h-[164px] w-full min-w-0
+        relative flex min-h-[112px] w-full min-w-0
         flex-col items-center justify-center
         rounded-3xl border-4 border-[#FFE7C2]
-        p-3 transition-colors duration-200 sm:p-4
+        p-2 transition-colors duration-200 sm:p-3
         ${isOver ? "bg-[#FFE7C2]/20" : "bg-transparent"}
       `}
       aria-label={`Posição ${index + 1} da timeline`}
     >
       {children ? (
-        <div className="flex w-full min-w-0 justify-center pt-3">
+        <div className="flex w-full min-w-0 justify-center">
           {children}
         </div>
       ) : (
-        <p className="max-w-[180px] text-center text-base font-bold text-[#FFE7C2] sm:text-lg">
+        <p className="max-w-[180px] text-center text-sm font-bold text-[#FFE7C2] sm:text-base">
           Arraste o card até aqui
         </p>
       )}
