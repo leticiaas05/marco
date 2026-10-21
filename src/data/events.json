@@ -419,7 +419,7 @@
     "title": "Golpe da Maioridade e Início do Segundo Reinado",
     "year": 1840,
     "description": "O Golpe da Maioridade antecipou a posse de D. Pedro II e encerrou o período regencial. A medida foi defendida por grupos políticos que esperavam que a autoridade do jovem imperador ajudasse a estabilizar o país.",
-    "detailedFeedback": "Este episódio encerra as regências e inaugura o Segundo Reinado. Posicione-o depois das revoltas e disputas regenciais, mas antes dos movimentos europeus de 1848 e das transformações políticas e econômicas da segunda metade do século XIX.",
+    "detailedFeedback": "Este episódio encerra as regências e inaugura o Segundo Reinado. Posicione-o depois das revoltas e disputas regenciais, mas antes dos movimentos europeus de 18** e das transformações políticas e econômicas da segunda metade do século XIX.",
     "image": "/images/card-47.jpg"
   },
   {
@@ -437,7 +437,7 @@
     "title": "Promulgação da Lei Eusébio de Queirós e Lei de Terras",
     "year": 1850,
     "description": "A Lei Eusébio de Queirós proibiu o tráfico transatlântico de pessoas escravizadas para o Brasil, enquanto a Lei de Terras estabeleceu regras que dificultaram o acesso à terra por meio da simples ocupação. Juntas, refletem mudanças na política imperial sobre trabalho e propriedade.",
-    "detailedFeedback": "Estas leis foram aprovadas no mesmo ano e ajudam a entender as transformações da sociedade imperial. Elas vêm depois das revoltas europeias de 1848 e antes da Guerra do Paraguai e da crise final da monarquia.",
+    "detailedFeedback": "Estas leis foram aprovadas no mesmo ano e ajudam a entender as transformações da sociedade imperial. Elas vêm depois das revoltas europeias de 18** e antes da Guerra do Paraguai e da crise final da monarquia.",
     "image": "/images/card-49.jpg"
   },
   {
@@ -499,7 +499,7 @@
     "phase": 3,
     "title": "Fim da República Velha e Ascensão de Getúlio Vargas",
     "year": 1930,
-    "description": "A Revolução de 1930 encerrou a ordem política da Primeira República e levou Getúlio Vargas ao poder. O movimento expressou disputas entre oligarquias regionais e setores que questionavam o sistema político vigente.",
+    "description": "Foi uma revolução que encerrou a ordem política da Primeira República e levou Getúlio Vargas ao poder. O movimento expressou disputas entre oligarquias regionais e setores que questionavam o sistema político vigente.",
     "detailedFeedback": "Este marco da história brasileira ocorre no contexto da crise mundial iniciada no fim da década de 1920. Ele antecede a criação da CLT e o estabelecimento da ditadura do Estado Novo.",
     "image": "/images/card-56.jpg"
   },
@@ -653,7 +653,7 @@
     "title": "Doutrina Truman e Consolidação da Guerra Fria",
     "year": 1947,
     "description": "A Doutrina Truman expressou a política dos Estados Unidos de conter a expansão da influência soviética, especialmente por meio de apoio a governos considerados ameaçados pelo comunismo. Ela se tornou um marco da formação da ordem bipolar do pós-guerra.",
-    "detailedFeedback": "Este marco pertence aos primeiros anos após a Segunda Guerra Mundial, quando a aliança entre Estados Unidos e União Soviética deu lugar a uma rivalidade política e ideológica. Coloque-o depois dos bombardeios atômicos no Japão e antes dos grandes projetos desenvolvimentistas brasileiros dos anos 1950.",
+    "detailedFeedback": "Este marco pertence aos primeiros anos após a Segunda Guerra Mundial, quando a aliança entre Estados Unidos e União Soviética deu lugar a uma rivalidade política e ideológica. Coloque-o depois dos bombardeios atômicos no Japão e antes dos grandes projetos desenvolvimentistas brasileiros.",
     "image": "/images/card-73.jpg"
   },
   {
@@ -673,14 +673,5 @@
     "description": "A dissolução da União Soviética encerrou formalmente o Estado soviético e levou à independência de suas repúblicas constituintes. O processo foi marcado por crise econômica, disputas políticas e movimentos nacionais, e consolidou a transformação da ordem internacional no fim do século XX.",
     "detailedFeedback": "Este acontecimento veio depois da queda do Muro de Berlim e do enfraquecimento dos regimes socialistas do Leste Europeu. Ele é um marco do encerramento da Guerra Fria e ocorreu após a redemocratização brasileira e a 'Constituição Cidadã'.",
     "image": "/images/card-75.jpg"
-  },
-  {
-    "id": "card-76",
-    "phase": 3,
-    "title": "Campanha “O Petróleo é Nosso”",
-    "year": 1948,
-    "description": "A campanha “O Petróleo é Nosso” mobilizou setores da sociedade em defesa do controle nacional das reservas e da exploração do petróleo. O movimento expressou disputas sobre soberania econômica, participação do Estado e presença do capital estrangeiro no setor energético.",
-    "detailedFeedback": "A campanha ganhou força no contexto do nacionalismo econômico do pós-guerra e antecedeu a criação da Petrobras. Coloque-a depois do fim da Segunda Guerra Mundial e antes da fundação da empresa estatal que materializou parte dessas reivindicações.",
-    "image": "/images/card-76.jpg"
   }
 ]
