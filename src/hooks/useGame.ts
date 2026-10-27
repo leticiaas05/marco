@@ -26,7 +26,7 @@ interface UseGameReturn {
   podeAvancar: boolean;
   jogoConcluido: boolean;
   posicionarEvento: (eventoId: string, zonaId: string) => void;
-  verificar: () => void;
+  verificar: () => ResultadoFase | null;
   avancarFase: () => void;
   reiniciarFase: () => void;
   reiniciarJogo: () => void;
@@ -113,8 +113,8 @@ export function useGame(eventos: Evento[]): UseGameReturn {
     setResultado(null);
   }
 
-  function verificar(): void {
-    if (!podeVerificar) return;
+  function verificar(): ResultadoFase | null {
+    if (!podeVerificar) return null;
 
     const novoResultado = verificarResposta(
       posicionamentos,
@@ -132,6 +132,8 @@ export function useGame(eventos: Evento[]): UseGameReturn {
     } else {
       setPosicionamentos({});
     }
+
+    return novoResultado;
   }
 
   function avancarFase(): void {

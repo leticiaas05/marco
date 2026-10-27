@@ -4,3 +4,20 @@
   --color-historical-card-bg: #ffe7c2;
   --color-historical-card-text: #381313;
 }
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+html,
+body {
+  background-color: #381313;
+}
+
+body {
+  min-height: 100vh;
+}
