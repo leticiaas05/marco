@@ -1,11 +1,305 @@
+import {
+  DndContext,
+  type DragEndEvent,
+} from "@dnd-kit/core";
+
+import { useGame } from "./hooks/useGame";
+import eventos from "./data/events";
+
+import { Timeline } from "./components/Timeline/Timeline";
+import { DropZone } from "./components/Dropzone/DropZone";
+import { EventCard } from "./components/EventCard/EventCard";
+import { FinalTimeline } from "./components/FinalTimeline/FinalTimeline";
+import { getFinalTimelineEvents } from "./utils/finalTimelineStorage";
+import { useState, type AnimationEvent } from "react";
+import "./App.css";
+import { HomePage } from "./components/HomePage/HomePage";
+import { HowToPlayModal } from "./components/HowToPlayModal/HowToPlayModal";
+import { EmojiRain } from "./components/EmojiRain/EmojiRain";
+import { Header } from "./components/Header/Header";
+import { Footer } from "./components/Footer/Footer";
+
 function App() {
+  const [iniciou, setIniciou] = useState(false);
+  const [modalComoJogarAberto, setModalComoJogarAberto] = useState(false);
+
+  const [phaseTransition, setPhaseTransition] = useState<
+    "idle" | "leaving" | "entering"
+  >("idle");
+
+  const [emojiEffect, setEmojiEffect] = useState<
+    "success" | "error" | null
+  >(null);
+
+  const [emojiRun, setEmojiRun] = useState(0);
+
+  const {
+    faseAtual,
+    eventosDaFase,
+    posicionamentos,
+    eventosNaMao,
+    resultado,
+    faseConcluida,
+    podeVerificar,
+    podeAvancar,
+    jogoConcluido,
+    posicionarEvento,
+    verificar,
+    avancarFase,
+    reiniciarFase,
+    reiniciarJogo,
+  } = useGame(eventos);
+
+  function handleVerificarResposta() {
+    const novoResultado = verificar();
+
+    if (!novoResultado) return;
+
+    setEmojiRun((atual) => atual + 1);
+
+    setEmojiEffect(
+      novoResultado.concluida ? "success" : "error",
+    );
+  }
+  
+  function handleAdvancePhase() {
+    if (phaseTransition !== "idle" || !podeAvancar) return;
+    setPhaseTransition("leaving");
+  }
+
+  function handlePhaseAnimationEnd(
+    event: AnimationEvent<HTMLDivElement>,
+  ) {
+    if (event.target !== event.currentTarget) return;
+
+    if (phaseTransition === "leaving") {
+      avancarFase();
+      setPhaseTransition("entering");
+    } else if (phaseTransition === "entering") {
+      setPhaseTransition("idle");
+    }
+  }
+
+  function handleDragEnd(event: DragEndEvent) {
+    const { active, over } = event;
+
+    if (!over) return;
+
+    const eventoId = String(active.id);
+    const zonaId = String(over.id);
+
+    if (!/^timeline-position-[0-2]$/.test(zonaId)) {
+      return;
+    }
+
+    posicionarEvento(eventoId, zonaId);
+  }
+
+  if (jogoConcluido) {
+    const eventosFinais = getFinalTimelineEvents();
+
+    return (
+      <>
+        <main className="final-screen-reveal min-h-[100dvh] bg-[#FFE7C2] p-8 text-[#381313]">
+          <Header
+            onHowToPlay={() => setModalComoJogarAberto(true)}
+          />
+
+          {eventosFinais.length === 9 ? (
+            <FinalTimeline events={eventosFinais} />
+          ) : (
+            <p className="text-center">
+              Não foi possível carregar os eventos da timeline final.
+            </p>
+          )}
+
+          <div className="mt-10 flex justify-center">
+            <button
+              type="button"
+              onClick={() => {
+                setEmojiEffect(null);
+                reiniciarJogo();
+                setIniciou(false);
+              }}
+              className="rounded-xl bg-[#381313] px-8 mr-2 py-3 font-bold text-[#FFE7C2] shadow-md transition-all hover:-translate-y-0.5 hover:bg-[#542323] hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#381313]"
+            >
+              Página Inicial
+            </button> 
+            
+            <button
+              type="button"
+              onClick={() => {
+                setEmojiEffect(null);
+                reiniciarJogo();
+              }}
+              className="rounded-xl bg-[#381313] px-8 py-3 font-bold text-[#FFE7C2] shadow-md transition-all hover:-translate-y-0.5 hover:bg-[#542323] hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#381313]"
+            >
+              Jogar novamente
+            </button>
+          </div>
+        </main>
+        <Footer />
+        {emojiEffect && (
+          <EmojiRain
+            key={emojiRun}
+            type={emojiEffect}
+            onComplete={() => setEmojiEffect(null)}
+          />
+        )}
+      </>
+    );
+  }
+
+  if (!iniciou) {
+    return (
+      <>
+        <HomePage
+          onStart={() => setIniciou(true)}
+          onHowToPlay={() => setModalComoJogarAberto(true)}
+        />
+        
+        <HowToPlayModal
+          isOpen={modalComoJogarAberto}
+          onClose={() => setModalComoJogarAberto(false)}
+        />
+      </>
+    );
+  }
+
+  const anosOrdenados = [...eventosDaFase]
+    .sort((a, b) => a.year - b.year)
+    .map((evento) => evento.year);
+
   return (
-    <main className="min-h-screen bg-slate-900 flex items-center justify-center">
-      <h1 className="text-5xl font-bold text-white">
-        Marco
-      </h1>
+    <main className="min-h-[100dvh] w-full overflow-hidden bg-[#FFE7C2] text-[#381313]">
+      <Header
+        onHowToPlay={() => setModalComoJogarAberto(true)}
+      />
+      
+      <DndContext onDragEnd={handleDragEnd}>
+        <div className="min-h-[calc(100dvh-64px)] bg-[#381313] px-4 py-8 sm:px-6 sm:py-10">
+          <div
+            key={faseAtual}
+            className={
+              phaseTransition !== "idle"
+                ? `timeline-transition-${phaseTransition}`
+                : ""
+            }
+            onAnimationEnd={handlePhaseAnimationEnd}
+          >
+            <Timeline
+              currentPhase={faseAtual}
+              years={anosOrdenados}
+            >
+              {Array.from({ length: 3 }, (_, index) => {
+                const zonaId = `timeline-position-${index}`;
+                const eventoId = posicionamentos[zonaId];
+
+                const eventoPosicionado = eventosDaFase.find(
+                  (evento) => evento.id === eventoId,
+                );
+
+                return (
+                  <DropZone
+                    key={zonaId}
+                    id={zonaId}
+                    index={index}
+                  >
+                    {eventoPosicionado && (
+                      <EventCard
+                        id={eventoPosicionado.id}
+                        title={eventoPosicionado.title}
+                        description={eventoPosicionado.description}
+                        image={eventoPosicionado.image}
+                        detailedFeedback={
+                          eventoPosicionado.detailedFeedback
+                        }
+                      />
+                    )}
+                  </DropZone>
+                );
+              })}
+            </Timeline>
+          </div>
+
+          <section
+            className="mx-auto mt-4 grid w-full max-w-5xl shrink-0 grid-cols-1 items-start gap-4 sm:grid-cols-2 md:grid-cols-3"
+            aria-label="Eventos disponíveis para organizar"
+          >
+            {eventosNaMao.map((evento) => (
+              <EventCard
+                key={evento.id}
+                id={evento.id}
+                title={evento.title}
+                description={evento.description}
+                image={evento.image}
+                detailedFeedback={evento.detailedFeedback}
+              />
+            ))}
+          </section>
+
+          <div className="mx-auto mt-4 flex shrink-0 max-w-5xl flex-wrap justify-center gap-3">
+            {!faseConcluida && (
+              <>
+                <button
+                  type="button"
+                  onClick={reiniciarFase}
+                  className="rounded-xl border-2 border-[#FFE7C2] px-5 py-3 font-bold text-[#FFE7C2] transition-opacity hover:opacity-80"
+                >
+                  Limpar posições
+                </button>
+
+                <button
+                  type="button"
+                  onClick={handleVerificarResposta}
+                  disabled={!podeVerificar}
+                  className="rounded-xl bg-[#FFE7C2] px-5 py-3 font-bold text-[#381313] transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
+                >
+                  Verificar resposta
+                </button>
+              </>
+            )}
+
+            {emojiEffect && (
+              <EmojiRain
+                key={emojiRun}
+                type={emojiEffect}
+                onComplete={() => setEmojiEffect(null)}
+              />
+            )}
+
+            {podeAvancar && (
+              <button
+                type="button"
+                onClick={handleAdvancePhase}
+                disabled={phaseTransition !== "idle"}
+                className="rounded-xl bg-[#FFE7C2] px-5 py-3 font-bold text-[#381313] transition-opacity hover:opacity-90"
+              >
+                Avançar para a próxima fase
+              </button>
+            )}
+          </div>
+
+          {resultado && (
+            <p
+              role="status"
+              className="mx-auto mt-3 shrink-0 max-w-3xl text-center text-sm font-bold text-[#FFE7C2]"
+            >
+              {resultado.concluida
+                ? "Parabéns! Você organizou os eventos corretamente!"
+                : `Você acertou ${resultado.quantidadeAcertos} de ${resultado.totalEventos}. Tente novamente!`}
+            </p>
+          )}
+        </div>
+      </DndContext>
+      <Footer />
+
+      <HowToPlayModal
+        isOpen={modalComoJogarAberto}
+        onClose={() => setModalComoJogarAberto(false)}
+      />
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
