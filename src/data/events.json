@@ -29,10 +29,10 @@
   {
     "id": "card-04",
     "phase": 1,
-    "title": "Expansão Territorial Romana e Crise da República",
+    "title": "Início da Expansão Romana no Mediterrâneo",
     "year": -264,
     "description": "As conquistas romanas ampliaram o território, o acesso a riquezas e o uso de trabalho escravizado. Ao mesmo tempo, concentraram terras e recursos, agravaram desigualdades e alimentaram disputas entre lideranças militares e instituições republicanas.",
-    "detailedFeedback": "Este processo pertence à fase de expansão da República Romana, posterior à organização de suas leis e anterior à consolidação do governo imperial. As conquistas ajudam a explicar por que a República entrou em crise.",
+    "detailedFeedback": "Este card pertence ao crescimento intelectual e urbano da Idade Média. O surgimento das universidades esteve relacionado à expansão das cidades, à circulação do conhecimento e à formação de comunidades de mestres e estudantes. Sua referência cronológica é anterior ao marco de 1100 utilizado para representar o Renascimento Comercial e Urbano.",
     "image": "/images/card-04.jpg"
   },
   {
@@ -218,7 +218,7 @@
   {
     "id": "card-25",
     "phase": 2,
-    "title": "Revolução Científica (O Heliocentrismo)",
+    "title": "Publicação da obra de Copérnico e o Heliocentrismo",
     "year": 1543,
     "description": "A Revolução Científica transformou a investigação da natureza por meio de observações, cálculos, experimentos e novas teorias. A defesa do heliocentrismo por Copérnico contestou o modelo geocêntrico dominante, mas a mudança científica ocorreu ao longo de gerações.",
     "detailedFeedback": "O heliocentrismo ganhou força no começo da Modernidade, junto à circulação de livros e ao questionamento de autoridades intelectuais tradicionais. Este processo é contemporâneo às grandes mudanças religiosas europeias e antecede as teorias políticas modernas do século XVII.",
@@ -290,9 +290,9 @@
   {
     "id": "card-33",
     "phase": 2,
-    "title": "Invasões Holandesas no Nordeste Açucareiro",
+    "title": "Invasões Neerlandesas no Brasil",
     "year": 1624,
-    "description": "As invasões neerlandesas estiveram ligadas às disputas europeias e ao interesse no comércio do açúcar. A ocupação atingiu áreas estratégicas do Nordeste, especialmente Pernambuco, onde o governo de Maurício de Nassau promoveu iniciativas urbanas e administrativas.",
+    "description": "As invasões neerlandesas estiveram ligadas às disputas europeias e ao interesse no comércio do açúcar. A primeira ocupação ocorreu na Bahia, nesse determinado ano, e uma nova ofensiva levou à conquista de Pernambuco, 6 anos depois. A administração de Maurício de Nassau, 7 anos depois da primeira ocupação, marcou uma etapa posterior da presença neerlandesa no Nordeste.",
     "detailedFeedback": "Este episódio pertence ao período colonial em que o açúcar era central para a economia do Nordeste. Ele ocorre depois da formação de Palmares e antes das disputas internas ligadas à mineração do ouro no interior da colônia.",
     "image": "/images/card-33.jpg"
   },
@@ -308,16 +308,16 @@
   {
     "id": "card-35",
     "phase": 2,
-    "title": "Revolta de Filipe dos Santos e as Casas de Fundição",
+    "title": "Casas de Fundição e Revolta de Vila Rica",
     "year": 1720,
-    "description": "A revolta de Filipe dos Santos contestou a fiscalização e a cobrança de tributos sobre o ouro. A criação das Casas de Fundição buscava controlar a circulação do metal e assegurar à Coroa a arrecadação do quinto.",
+    "description": "A revolta de Filipe dos Santos contestou a fiscalização e a cobrança de tributos sobre o ouro. A criação das Casas de Fundição, no ano anterior ao marco, buscava controlar a circulação do metal e assegurar à Coroa a arrecadação do quinto.",
     "detailedFeedback": "Este episódio ocorre durante o ciclo do ouro, depois dos conflitos iniciais pelo controle das minas. Relacione-o ao aumento da fiscalização portuguesa, que alimentou tensões coloniais antes das conjurações inspiradas por ideias iluministas.",
     "image": "/images/card-35.jpg"
   },
   {
     "id": "card-36",
     "phase": 2,
-    "title": "Tratado de Madrid",
+    "title": "Tratado de Madri",
     "year": 1750,
     "description": "O Tratado de Madri redefiniu limites territoriais entre os domínios portugueses e espanhóis na América, recorrendo em parte ao princípio de ocupação efetiva do território. A negociação refletiu a expansão para além das linhas estabelecidas anteriormente.",
     "detailedFeedback": "Este acordo pertence ao século XVIII colonial, quando a ocupação portuguesa já avançava para áreas interiores. Ele é posterior ao início da mineração e antecede as conspirações e revoluções influenciadas pelo Iluminismo no fim do século.",
@@ -419,7 +419,7 @@
     "title": "Golpe da Maioridade e Início do Segundo Reinado",
     "year": 1840,
     "description": "O Golpe da Maioridade antecipou a posse de D. Pedro II e encerrou o período regencial. A medida foi defendida por grupos políticos que esperavam que a autoridade do jovem imperador ajudasse a estabilizar o país.",
-    "detailedFeedback": "Este episódio encerra as regências e inaugura o Segundo Reinado. Posicione-o depois das revoltas e disputas regenciais, mas antes dos movimentos europeus de 18** e das transformações políticas e econômicas da segunda metade do século XIX.",
+    "detailedFeedback": "Este episódio encerra as regências e inaugura o Segundo Reinado. Posicione-o depois das revoltas e disputas regenciais, mas antes dos movimentos europeus de meados do século XIX e das transformações políticas e econômicas da segunda metade do século XIX.",
     "image": "/images/card-47.jpg"
   },
   {
@@ -437,7 +437,7 @@
     "title": "Promulgação da Lei Eusébio de Queirós e Lei de Terras",
     "year": 1850,
     "description": "A Lei Eusébio de Queirós proibiu o tráfico transatlântico de pessoas escravizadas para o Brasil, enquanto a Lei de Terras estabeleceu regras que dificultaram o acesso à terra por meio da simples ocupação. Juntas, refletem mudanças na política imperial sobre trabalho e propriedade.",
-    "detailedFeedback": "Estas leis foram aprovadas no mesmo ano e ajudam a entender as transformações da sociedade imperial. Elas vêm depois das revoltas europeias de 18** e antes da Guerra do Paraguai e da crise final da monarquia.",
+    "detailedFeedback": "Estas leis foram aprovadas no mesmo ano e ajudam a entender as transformações da sociedade imperial. Elas vêm depois das revoltas europeias por volta de 1800 e antes da Guerra do Paraguai e da crise final da monarquia.",
     "image": "/images/card-49.jpg"
   },
   {
@@ -473,7 +473,7 @@
     "title": "O Atentado de Sarajevo e a Primeira Guerra Mundial",
     "year": 1914,
     "description": "O assassinato do arquiduque Francisco Ferdinando em Sarajevo desencadeou uma crise diplomática que, devido a alianças militares e rivalidades imperialistas, contribuiu para o início da Primeira Guerra Mundial. O conflito mobilizou sociedades inteiras e alterou o mapa político europeu.",
-    "detailedFeedback": "Este acontecimento marca o início de uma era de guerras mundiais no século XX. Ele vem antes da Revolução Russa e da crise econômica mundial do fim da década de 19**.",
+    "detailedFeedback": "Este acontecimento marca o início de uma era de guerras mundiais no século XX. Ele vem antes da Revolução Russa e da crise econômica mundial do fim de meados do século XX.",
     "image": "/images/card-53.jpg"
   },
   {
