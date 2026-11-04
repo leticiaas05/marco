@@ -2,6 +2,7 @@ import {
   DndContext,
   type DragEndEvent,
 } from "@dnd-kit/core";
+import { Analytics } from "@vercel/analytics/react";
 
 import { useGame } from "./hooks/useGame";
 import eventos from "./data/events";
@@ -100,6 +101,7 @@ function App() {
 
     return (
       <>
+        <Analytics />
         <main className="final-screen-reveal min-h-[100dvh] bg-[#FFE7C2] p-8 text-[#381313]">
           <Header
             onHowToPlay={() => setModalComoJogarAberto(true)}
@@ -153,6 +155,7 @@ function App() {
   if (!iniciou) {
     return (
       <>
+        <Analytics />
         <HomePage
           onStart={() => setIniciou(true)}
           onHowToPlay={() => setModalComoJogarAberto(true)}
@@ -171,12 +174,14 @@ function App() {
     .map((evento) => evento.year);
 
   return (
-    <main className="min-h-[100dvh] w-full overflow-hidden bg-[#FFE7C2] text-[#381313]">
-      <Header
-        onHowToPlay={() => setModalComoJogarAberto(true)}
-      />
-      
-      <DndContext onDragEnd={handleDragEnd}>
+    <>
+      <Analytics />
+      <main className="min-h-[100dvh] w-full overflow-hidden bg-[#FFE7C2] text-[#381313]">
+        <Header
+          onHowToPlay={() => setModalComoJogarAberto(true)}
+        />
+        
+        <DndContext onDragEnd={handleDragEnd}>
         <div className="min-h-[calc(100dvh-64px)] bg-[#381313] px-4 py-8 sm:px-6 sm:py-10">
           <div
             key={faseAtual}
@@ -298,7 +303,8 @@ function App() {
         isOpen={modalComoJogarAberto}
         onClose={() => setModalComoJogarAberto(false)}
       />
-    </main>
+      </main>
+    </>
   );
 }
 
