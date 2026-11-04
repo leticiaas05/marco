@@ -19,7 +19,7 @@ export function HomePage({
         <section className="flex min-h-[calc(100vh-69px)] flex-col items-center px-5 pt-28 sm:px-10 sm:pt-32">
           <div className="flex w-full max-w-3xl flex-col items-center text-center">
             <p className="text-xl font-extrabold leading-[1.4] sm:text-2xl md:text-[28px]">
-              O Marco foi desenvolvido para desenvolvido para apoiar 
+              O Marco foi desenvolvido para apoiar 
               alunos do ensino médio na relação de datas e eventos 
               históricos.
               Organize os cards em ordem cronológica e construa a
